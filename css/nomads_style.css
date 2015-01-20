@@ -1,0 +1,26 @@
+/* line 5, ../sass/nomads_style.scss */
+body {
+  background: #dbe8e5;
+}
+
+/* line 9, ../sass/nomads_style.scss */
+.title {
+  color: #329276;
+}
+/* line 11, ../sass/nomads_style.scss */
+.title h1 {
+  font-size: 5.5em;
+  font-weight: bold;
+}
+
+/* line 17, ../sass/nomads_style.scss */
+p {
+  color: #dbe8e5;
+}
+
+/* line 21, ../sass/nomads_style.scss */
+article.project {
+  background: #FEFEFE;
+  padding: 0.5em 1em 2em 1em;
+  margin: 1em 0;
+}

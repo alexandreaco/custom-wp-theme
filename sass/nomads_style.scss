@@ -1,0 +1,25 @@
+$gray: #DBE8E5;
+$dark-gray: #DBE8E5;
+$green:  #329276;
+
+body {
+	background: $gray;
+}
+
+.title {
+	color: $green;
+	h1 {
+		font-size: 5.5em;
+		font-weight: bold;
+	}
+}
+
+p {
+	color: $dark-gray;
+}
+
+article.project {
+	background: #FEFEFE;
+	padding: 0.5em 1em 2em 1em;
+	margin: 1em 0;
+}
