@@ -3,7 +3,7 @@
 Template Name: Homepage
 */
 ?>
-
+<div class="background_img"></div>
 <?php get_header(); ?>
 
 	<div class="row">

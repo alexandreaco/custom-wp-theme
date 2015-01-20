@@ -72,11 +72,17 @@ add_action( 'init', 'create_post_type' );
 
 	wp_register_style( 'nomads_style', get_template_directory_uri() . '/css/nomads_style.css' );
 
+	wp_register_script( 'script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ));
+
+	wp_enqueue_script( 'jquery');
+
 	wp_enqueue_script( 'bootstrap-js' );
 
 	wp_enqueue_style( 'bootstrap-css' );
 
 	wp_enqueue_style( 'nomads_style');
+
+	wp_enqueue_script( 'script' );
 
 }
 add_action( 'wp_enqueue_scripts', 'my_bootstrap_theme_scripts' );
