@@ -45,18 +45,21 @@ add_action( 'widgets_init', 'nomads_widgets_init' );
  *	Create project post type
  */
 function create_post_type() {
-  register_post_type( 'project',
+  register_post_type( 'apartment',
     array(
       'labels' => array(
-        'name' => __( 'Projects' ),
-        'singular_name' => __( 'Project' )
+        'name' => __( 'Apartments' ),
+        'singular_name' => __( 'Apartment' )
       ),
+    	'taxonomies' => array('category'),
+
       'public' => true,
       'has_archive' => true,
     )
   );
 }
 add_action( 'init', 'create_post_type' );
+
 
 
 /**
@@ -87,5 +90,19 @@ add_action( 'init', 'create_post_type' );
 }
 add_action( 'wp_enqueue_scripts', 'my_bootstrap_theme_scripts' );
 remove_filter('the_content', 'wpautop');
+
+/* Include Custom Post Type in Category Filters */
+add_filter('pre_get_posts', 'query_post_type');
+function query_post_type($query) {
+  if(is_category() || is_tag()) {
+    $post_type = get_query_var('post_type');
+	if($post_type)
+	    $post_type = $post_type;
+	else
+	    $post_type = array('post','apartment'); // replace cpt to your custom post type
+    $query->set('post_type',$post_type);
+	return $query;
+    }
+}
 
 ?>

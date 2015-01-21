@@ -7,13 +7,22 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h2><?php the_title(); ?></h2>
-						<!-- Display the date and a link to other posts by this posts author. -->
-	 					<small><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></small>
 	 				</div>
 	 			</div>
 	 			<div class="row">
 		 			<div class="col-md-12">
 						<?php the_content(); ?>
+					</div>
+				</div> <!-- /row -->
+				<div class="row">
+		 			<div class="col-md-6 apartment_description">
+
+						<p><?php the_field('floor') ?>'st floor</p>
+						<p><?php the_field('occupied') ?> vacant</p>
+						<p><?php the_field('bedrooms') ?> bedroom(s)</p>
+						<p><?php the_field('bathrooms') ?> bathroom(s)</p>
+						<p><?php the_field('description') ?> </p>
+						
 					</div>
 				</div> <!-- /row -->
 				<?php endwhile;?>

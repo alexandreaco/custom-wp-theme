@@ -9,7 +9,7 @@ Template Name: Homepage
 	<div class="row">
 
 		<div class="col-md-12 title">
-			<h1>NOMADS Creative</h1>
+			<h1>Maggie's Rentals</h1>
 		</div>
 
 	</div><!-- /row -->

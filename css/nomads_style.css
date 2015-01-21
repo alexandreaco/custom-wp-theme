@@ -1,38 +1,21 @@
-/* line 5, ../sass/nomads_style.scss */
-body {
-  background: #dbe8e5;
-}
-
-/* line 9, ../sass/nomads_style.scss */
+/* line 6, ../sass/nomads_style.scss */
 .title {
   color: #329276;
 }
-/* line 11, ../sass/nomads_style.scss */
+/* line 8, ../sass/nomads_style.scss */
 .title h1 {
   font-size: 5.5em;
   font-weight: bold;
-  text-shadow: 0px 0px 1px #dbe8e5;
+  text-shadow: 0px 0px 1px #494949;
 }
 
-/* line 18, ../sass/nomads_style.scss */
-p {
-  color: #dbe8e5;
-}
-
-/* line 22, ../sass/nomads_style.scss */
-article.project {
-  background: #FEFEFE;
-  padding: 0.5em 1em 2em 1em;
-  margin: 1em 0;
-}
-
-/* line 28, ../sass/nomads_style.scss */
+/* line 15, ../sass/nomads_style.scss */
 .navbar-nomads {
   background: rgba(100, 100, 100, 0.5);
   border-radius: 0.0;
 }
 
-/* line 33, ../sass/nomads_style.scss */
+/* line 20, ../sass/nomads_style.scss */
 .background_img {
   width: 100%;
   z-index: -10;

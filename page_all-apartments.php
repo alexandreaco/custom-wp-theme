@@ -1,13 +1,13 @@
 <?php
 /*
-Template Name: Projects Page
+Template Name: All Apartments
 */
 ?>
 
 <?php get_header(); ?>
 
 	<div>			
-				<?php $query = new WP_Query( 'post_type=project' );
+				<?php $query = new WP_Query( 'post_type=apartment' );
 
 				if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
