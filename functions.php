@@ -1,5 +1,14 @@
 <?php
 
+/*	Author: Alex Defreitas 
+ *  Date: Jan 2015
+ *
+ *	Wordpress theme Functions file. Defines a custom post type
+ *  "Apartment" with Custom Fields. Also uses Bootstrap as a 
+ *  front-end framework.
+ *
+ */
+
 // Register custom navigation walker
 require_once('wp_bootstrap_navwalker.php');
 
@@ -11,7 +20,6 @@ if ( ! function_exists( 'nomads_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 *
-	 * @since Twenty Fifteen 1.0
 	 */
 	function nomads_setup() {
 		// This theme uses wp_nav_menu() in two locations.

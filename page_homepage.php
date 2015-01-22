@@ -9,7 +9,8 @@ Template Name: Homepage
 	<div class="row">
 
 		<div class="col-md-12 title">
-			<h1>Maggie's Rentals</h1>
+			<h1>Nomads Creative</h1>
+			<small>est. 2012</small>
 		</div>
 
 	</div><!-- /row -->
@@ -18,7 +19,7 @@ Template Name: Homepage
 
 				while( have_posts() ) : the_post(); ?>
 
-				<div class="col-md-6">
+				<div class="col-md-6 home_content">
 					<?php the_content(); ?>
 				</div>
 

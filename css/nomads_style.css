@@ -1,26 +1,67 @@
-/* line 6, ../sass/nomads_style.scss */
-.title {
-  color: #329276;
-}
 /* line 8, ../sass/nomads_style.scss */
+.title {
+  color: #FFF;
+  text-align: center;
+}
+/* line 11, ../sass/nomads_style.scss */
 .title h1 {
   font-size: 5.5em;
   font-weight: bold;
   text-shadow: 0px 0px 1px #494949;
+  text-align: center;
+  font-family: "Garamond", "Georgia", serif;
+}
+/* line 18, ../sass/nomads_style.scss */
+.title small {
+  font-family: "Garamond", "Georgia", serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
 }
 
-/* line 15, ../sass/nomads_style.scss */
-.navbar-nomads {
-  background: rgba(100, 100, 100, 0.5);
+/* line 26, ../sass/nomads_style.scss */
+.home_content {
+  color: #FEFEFE;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+/* line 32, ../sass/nomads_style.scss */
+.home .navbar-nomads {
+  text-transform: uppercase;
   border-radius: 0.0;
 }
+/* line 37, ../sass/nomads_style.scss */
+.home .navbar-nomads ul.dropdown-menu {
+  background: rgba(100, 100, 100, 0.5);
+}
+/* line 42, ../sass/nomads_style.scss */
+.home .navbar-nomads ul li.open a {
+  color: #494949;
+}
+/* line 46, ../sass/nomads_style.scss */
+.home .navbar-nomads ul li.open ul a {
+  color: #FFF;
+}
+/* line 49, ../sass/nomads_style.scss */
+.home .navbar-nomads ul li.open ul a:hover {
+  color: #494949;
+}
+/* line 54, ../sass/nomads_style.scss */
+.home .navbar-nomads ul li a {
+  color: #FFF;
+}
+/* line 57, ../sass/nomads_style.scss */
+.home .navbar-nomads ul li a:hover {
+  color: #494949;
+}
 
-/* line 20, ../sass/nomads_style.scss */
+/* line 66, ../sass/nomads_style.scss */
 .background_img {
   width: 100%;
   z-index: -10;
   position: fixed;
-  background: url(../img/background.jpg) no-repeat center center fixed;
+  background: url(../img/bkg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -11,6 +11,7 @@
         <?php wp_head(); ?>
     </head>
 
+    <body <?php body_class()?> >
     <nav class="navbar navbar-nomads" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -20,9 +21,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="<?php bloginfo('url')?>">
+        <!--<a class="navbar-brand" href="<?php bloginfo('url')?>">
             <?php bloginfo('name')?>
-        </a>
+        </a>-->
 
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
